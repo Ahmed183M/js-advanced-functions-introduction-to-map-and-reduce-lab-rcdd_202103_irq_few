@@ -37,9 +37,9 @@ function mapToSquare(sourceArray) {
 function reduceToTotal(sourceArray, startingPoint=0) {
   let total = 0;
   for(let i=startingPoint; i<sourceArray.length; i++){
-    newArray.push(sourceArray[i]*sourceArray[i]);
+    total += sourceArray[i];
   }
-  return newArray;
+  return total;
 }
 
 function reduceToAllTrue(sourceArray) {
