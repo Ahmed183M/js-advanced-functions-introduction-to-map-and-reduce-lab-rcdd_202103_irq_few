@@ -5,16 +5,29 @@ function mapToNegativize(sourceArray) {
   for(let i=0; i<sourceArray.length; i++){
     if(Math.sign(sourceArray[i]) == -1) newArray.push(sourceArray[i]);
   }
+  return newArray;
 }
 
 function mapToNoChange(sourceArray) {
   let newArray = [];
+  for(let i=0; i<sourceArray.length; i++){
+    newArray.push(sourceArray[i]);
+  }
+  return newArray;
 }
 
 function mapToDouble(sourceArray) {
   let newArray = [];
+  for(let i=0; i<sourceArray.length; i++){
+    newArray.push(sourceArray[i]*2);
+  }
+  return newArray;
 }
 
 function mapToSquare(sourceArray) {
   let newArray = [];
+  for(let i=0; i<sourceArray.length; i++){
+    newArray.push(sourceArray[i]);
+  }
+  return newArray;
 }
